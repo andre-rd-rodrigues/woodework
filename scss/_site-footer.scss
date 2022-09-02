@@ -1,68 +1,81 @@
 .site-footer {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  font-size: 15px;
+  @include media-breakpoint-down(md) {
+    padding-top: 30px;
+  }
+  a {
+    color: $black;
+    &:hover {
+      color: $primary;
+    }
+  }
+  .footer-links-container {
+    & ul {
+      display: flex;
+      & li {
+        margin-right: 30px;
+      }
+    }
+  }
+  .widget {
+    margin-bottom: 30px;
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
 
-	padding: 70px 0;
+    .social {
+      li {
+        display: inline-block;
+        a {
+          width: 50px;
+          height: 50px;
+          border-radius: 10px;
+          background: $black;
+          display: inline-block;
+          position: relative;
+          color: $white;
+          span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+    .links {
+      li {
+        display: block;
+        margin-bottom: 10px;
+        a {
+          color: $black;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
 
-	a {
-		color: #777;
-		position: relative;
-		display: inline-block;
-		
-		&:hover {
-			color: $primary;
-			&:before {
-				background: rgba($primary, 1);
-			}
-		}
-	}
-	.btn {
-		&:before {
-			display: none;
-		}
-	}
-
-	.widget {
-		margin-bottom: 40px;
-		display: block;
-		h3 {
-			font-size: 16px;
-			color: $black;
-			font-weight: 700;
-			margin-bottom: 30px;
-		}
-
-		.links {
-			li {
-				margin-bottom: 10px;
-			}
-		}
-	}
-
-	.social {
-		li {
-			display: inline-block;
-			a {
-				display: inline-block;
-				width: 30px;
-				height: 30px;
-				position: relative;
-				background: $primary;
-				border-radius: 50%;
-				color: $white;
-				&:before {
-					display: none;
-				}
-				> span {
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-				}
-				&:hover {
-					background: lighten($primary, 10%);
-					color: $white;
-				}
-			}
-		}
-	}
-
+  .copyright {
+    position: relative;
+    padding-top: 40px;
+    margin-top: 40px;
+    &:before {
+      top: 0;
+      position: absolute;
+      left: 15px;
+      right: 15px;
+      content: "";
+      height: 1px;
+      background: $black;
+    }
+  }
 }
