@@ -1,0 +1,19 @@
+{
+  "name": "woodwork-app",
+  "homepage": "https://github.com/andre-rd-rodrigues/woodework/#",
+  "version": "1.0.0",
+  "description": "Simple business template example.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andre-rd-rodrigues/woodework.git"
+  },
+  "author": "Andre Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andre-rd-rodrigues/woodework/issues"
+  }
+}
